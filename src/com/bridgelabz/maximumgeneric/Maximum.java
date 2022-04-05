@@ -1,4 +1,4 @@
-/*@Purpose :Taking 3 String find the maximum
+/*@Purpose :Taking 6 String find the maximum
  *Use Integer Object and compareTo method to test the maximum number 
  * @file :Generic Method
  * @author :Kishlay Kishan
@@ -29,15 +29,21 @@ public class Maximum {
 
 		Maximum maximum = new Maximum();
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Input 3 String Values :- ");
+		System.out.println("Input 6 String Values :- ");
 		System.out.print("String 1: ");
 		String string1 = sc.next();
 		System.out.print("String 2: ");
 		String string2 = sc.next();
 		System.out.print("String 3: ");
 		String string3 = sc.next();
+		System.out.print("String 4: ");
+		String string4 = sc.next();
+		System.out.print("String 5: ");
+		String string5 = sc.next();
+		System.out.print("String 6: ");
+		String string6 = sc.next();
 
-		String num_arr[] = new String[] { string1, string2, string3 };
+		String num_arr[] = new String[] { string1, string2, string3, string4, string5, string6 };
 		Stream<String> stream = Arrays.stream(num_arr);
 		System.out.println("Maximum String Among These Values = " + maximum.maxString(stream));
 		sc.close();
