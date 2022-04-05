@@ -1,6 +1,6 @@
 /*@Purpose :Taking 6 String find the maximum
  *Use Integer Object and compareTo method to test the maximum number 
- * @file :Generic Method
+ * @file :Generic_Method
  * @author :Kishlay Kishan
  */
 
