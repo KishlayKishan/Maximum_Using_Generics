@@ -1,4 +1,4 @@
-/*@Purpose :Taking 3 Floating Numbers find the maximum
+/*@Purpose :Taking 3 String find the maximum
  *Use Integer Object and compareTo method to test the maximum number 
  * @file :Generic Method
  * @author :Kishlay Kishan
@@ -13,13 +13,13 @@ import java.util.stream.Stream;
 public class Maximum {
 
 	/*
-	 * @Purpose : Creating MaxNumber Constructor using Steam Function From Util
-	 * Package And Generics With Float And CompareTo
+	 * @Purpose : Creating MaxString Constructor using Steam Function From Util
+	 * Package And Generics With String And CompareTo
 	 * 
-	 * @param : Stream Function With Float As Generics
+	 * @param : Stream Function With String As Generics
 	 */
-	public Float maxFloat(Stream<Float> stream) {
-		return stream.max(Float::compareTo).get();
+	public String maxString(Stream<String> stream) {
+		return stream.max(String::compareTo).get();
 	}
 
 	/*
@@ -29,17 +29,17 @@ public class Maximum {
 
 		Maximum maximum = new Maximum();
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Input 3 Integer Values :- ");
-		System.out.print("Enter Float 1: ");
-		float num1 = sc.nextFloat();
-		System.out.print("Enter Float 2: ");
-		float num2 = sc.nextFloat();
-		System.out.print("Enter Float 3: ");
-		float num3 = sc.nextFloat();
+		System.out.println("Input 3 String Values :- ");
+		System.out.print("String 1: ");
+		String string1 = sc.next();
+		System.out.print("String 2: ");
+		String string2 = sc.next();
+		System.out.print("String 3: ");
+		String string3 = sc.next();
 
-		Float fl_arr[] = new Float[] { (float) num1, (float) num2, (float) num3 };
-		Stream<Float> fl_stream = Arrays.stream(fl_arr);
-		System.out.println("Maximum floating Point Values Among These Values= " + maximum.maxFloat(fl_stream));
+		String num_arr[] = new String[] { string1, string2, string3 };
+		Stream<String> stream = Arrays.stream(num_arr);
+		System.out.println("Maximum String Among These Values = " + maximum.maxString(stream));
 		sc.close();
 	}
 }
